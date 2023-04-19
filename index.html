@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <p class="fa-toggle-icon" id="toggle" onclick="changecolor()"   ><i class="fa-solid fa-toggle-off"></i></p>
+    </header>
+    <main class="calculatormain">    
+        <div class="calculator">
+            <div class="header flex">
+                <p class="equalsymbol symbolcolor">
+                    &equals;
+                </p>
+                <p class="answer txtcolor" id="answer"></p>
+            </div>
+            <div class="afterheader">
+                <p class="typed txtcolor" id="typed"></p>
+            </div>
+            <div class="main flex">
+                <p class="button btnseccolor flex" onclick="clearCE()">CE</p>
+                <p class="button btnseccolor flex" onclick="clearC()">C</p>
+                <p class="button btnseccolor flex" onclick="readvalue(this)" button>&percnt;</p>
+                <p class="button btnseccolor flex" onclick="readvalue(this)" button>&#8725;</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>7</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>8</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>9</p>
+                <p class="button btnseccolor flex" onclick="readvalue(this)" button>&lowast;</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>4</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>5</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>6</p>
+                <p class="button btnseccolor flex" onclick="readvalue(this)" button>&minus;</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>1</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>2</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>3</p>
+                <p class="button btnseccolor flex" onclick="readvalue(this)" button>&plus;</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>0</p>
+                <p class="button btnmaincolor flex" onclick="readvalue(this)" button>&period;</p>
+                <p class="button btnseccolor flex" onclick="calculate()" button>&equals;</p>
+                <p class="button btnseccolor flex" onclick="readvalue(this)" button>&radic;</p>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://kit.fontawesome.com/389a230baf.js"></script>
+    <script src="js/darklight.js"></script>
+    <script src="js/calc.js"></script>
+</body>
+</html>
